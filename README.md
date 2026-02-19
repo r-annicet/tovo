@@ -283,12 +283,17 @@ color_spaces = ['hsv', 'rgb']
 If you use this work, please cite:
 
 ```bibtex
-@article{tovo2026,
-  title   = {TOVO: A Robust, Efficient, and Simple Approach to Low-Light Image Enhancement},
-  journal = {Signal Processing},
-  year    = {2026},
-  doi     = {10.1016/j.sigpro.2026.110540}
-}
+@article{RAZAFINDRATOVOLAHY2026110540,
+title = {TOVO: Tone-oriented vision optimization for efficient low-light image enhancement},
+journal = {Signal Processing},
+volume = {244},
+pages = {110540},
+year = {2026},
+issn = {0165-1684},
+doi = {https://doi.org/10.1016/j.sigpro.2026.110540},
+url = {https://www.sciencedirect.com/science/article/pii/S016516842600054X},
+author = {Annicet Razafindratovolahy and Yunbo Rao and Jean Clément Tovolahy and Mona Afanga and Albert Mutale},
+keywords = {Low-Light image enhancement, Image processing, Monotonic transformation, Non-Linear image enhancement, Real-Time image processing}
 ```
 
 ---
