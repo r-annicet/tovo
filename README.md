@@ -103,7 +103,7 @@ Run on CPU:
 Enhance a single image with default settings:
 
 ```bash
-python inference.py --method single --input input.jpg --output output.jpg --iteration 5 --device cuda --color_space hsv
+python inference.py --mode single --input input.jpg --output output.jpg --iteration 5 --device cuda --color_space hsv
 ```
 
 - Replace `input.jpg` with your image path  
@@ -117,7 +117,7 @@ Enhance a single image:
 
 ```bash
 python inference.py \
-  --method single \
+  --mode single \
   --input path/to/input.jpg \
   --output path/to/output.jpg \
   --iteration 5 \
@@ -133,7 +133,7 @@ Enhance all images in a folder:
 
 ```bash
 python inference.py \
-  --method folder \
+  --mode folder \
   --input path/to/input_folder \
   --output path/to/output_folder \
   --iteration 5 \
@@ -149,7 +149,7 @@ Dataset mode enhances all images inside the selected dataset directory.
 
 ```bash
 python inference.py \
-  --method data \
+  --mode data \
   --dataset VV \
   --model TOVO \
   --iteration 5 \
@@ -210,7 +210,7 @@ python run_batch_experiments.py
 
 #### Requirement (only for batch script)
 
-`run_batch_experiments.py` calls `inference.py --method data --dataset <name>`.  
+`run_batch_experiments.py` calls `inference.py --mode data --dataset <name>`.  
 So you must ensure the dataset folders listed inside the script exist and are accessible from where you run it.
 
 A common setup is to run it from the parent directory that contains all datasets, e.g.:
@@ -237,7 +237,7 @@ color_spaces = ['hsv', 'rgb']
 
 | Argument         | Description | Default | Recommendation |
 |------------------|------------|---------|----------------|
-| `--method`       | Execution mode: `single`, `folder`, or `data` | `data` | Use `single` for quick testing |
+| `--mode`       | Execution mode: `single`, `folder`, or `data` | `data` | Use `single` for quick testing |
 | `--input`        | Path to input image or folder | None | Required for `single` and `folder` |
 | `--output`       | Path to save results | None | Required for `single` and `folder` |
 | `--dataset`      | Dataset name (used in `data` mode) | `VV` | Match folder name exactly |
